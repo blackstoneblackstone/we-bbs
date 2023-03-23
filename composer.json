@@ -1,0 +1,12 @@
+{
+    "require": {
+        "qcloud/cos-sdk-v5": "^1.3",
+        "aliyuncs/oss-sdk-php": "2.2.4",
+        "ezyang/htmlpurifier": "^4.13",
+        "tencentcloud/sms": "^3.0",
+        "ext-zlib": "*",
+        "ext-redis": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*"
+    }
+}

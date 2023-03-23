@@ -1,0 +1,26 @@
+<?php if ($this->log) { ?>
+<?php foreach ($this->log AS $key => $val) { ?>
+<tr>
+	<td><?php echo date_friendly($val['time'], 604800, 'Y-m-d'); ?></td>
+	<td><?php echo $val['type_text']; ?></td>
+	<td>
+		<?php if($val['status']==1){?>
+		<font color="green">已审核</font>
+		<?php }elseif($val['status']==-1){?>
+		<font color="red">拒绝审核</font>
+		<?php }else{?>
+		<font color="blue">待审核</font>
+		<?php } ?>
+	</td>
+	<td><?php echo cjk_substr(checkStrHtml($val['remarks']), 0, 30 , 'UTF-8', '...') ?></td>
+	<td>
+		<a onclick="AWS.dialog('ajaxData', {'title':'<?php _e('内容预览'); ?>', 'url':G_BASE_URL + '/account/ajax/preview/type-<?php echo $val['type']; ?>__id-<?php echo $val['id']; ?>'});" class="btn btn-primary btn-xs">
+		<?php _e('预览');?>
+		</a>
+		<!--<a href=""><?php _e('修改');?></a>-->
+	</td>
+</tr>
+<?php } ?>
+<input type="hidden" class="ajax_result<?php echo $this->page;?>" value="<?php echo count($this->log);?>">
+<input type="hidden" class="per_page" value="<?php echo $this->per_page;?>">
+<?php } ?>
