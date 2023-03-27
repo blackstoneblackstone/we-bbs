@@ -1,0 +1,14 @@
+.footerCommentBox{
+
+}
+
+.footerCommentBox .commentForm .commentInput{
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    background: #eee;
+    height: 35px;
+    margin: 10px 0;
+    width: 100%;
+    padding: 10px;
+}

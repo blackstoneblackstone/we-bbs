@@ -1,0 +1,17 @@
+.authorBox .bgstyle{ position: absolute; z-index: 1}
+.authorAvatar{
+    background: #fff;
+    padding: 5px;
+    width: 139px;
+    height: 139px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.authorAvatar img{border-radius:100px;width: 139px;height: 139px;}
+.autobox{ position: relative; z-index: 666; top:50px; left:60px; width:70%; height:200px; padding:30px; background: url("../../images/apher2.png")}
+.authorInfo{
+    float: left;
+    padding-left:20px;
+    width:60%;
+}
+.authorInfo dd, .authorInfo dd h2 a{ color: #ffffff;}

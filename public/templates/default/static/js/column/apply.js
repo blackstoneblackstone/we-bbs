@@ -1,0 +1,1 @@
+AWS.upload.webUpload('filePicker_cover','cover_preview','cover','column');

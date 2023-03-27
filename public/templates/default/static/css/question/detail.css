@@ -1,0 +1,84 @@
+#aw-question-fixed{padding: 1rem;box-shadow: rgb(238 238 238) 0 0 10px;}
+#aw-question-fixed h3{font-size: 1.3rem;font-weight: bold;}
+#question-content{overflow: hidden}
+#show-all{padding: 0.5rem 0;background: #fff;}
+#show-all a,#show-less a{color:#835bc3}
+label{font-weight: normal;margin-bottom: 0}
+.extend-info .line{width: 1px;height: 20px;background: #eee;position: relative;top: 10px;}
+.btn {font-weight: normal;}
+.aw-alpha-hidden {
+    height: 96px;
+    background: linear-gradient(180deg,rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.aw-alpha-hidden span {
+    display: block;
+    margin: 0 auto;
+    width: 100px;
+    background: #ffffff;
+    border-radius: 4px;
+    text-align: center;
+    color: #835bc3;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+}
+.aw-alpha-hidden span i{font-style: normal}
+.extend-info{top:0;right: 0}
+.aw-content-info h2.title{
+    color: #121212;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+.aw-content-info label a,.aw-content-info a{
+    color: #76839b;
+}
+.aw-content-info .actions a.active{color:#835bc3 }
+/*最佳回答*/
+.answer-btn-actions label a.active{color:#835bc3}
+.aw-answer-best{position: absolute;right: 15px;top: 0}
+.aw-answer-best i{font-size: 36px;color:#835bc3}
+.answer-btn-actions a,.actions a{color:#76839b;}
+.answer-btn-actions .aw-ajax-against,.answer-btn-actions .aw-ajax-agree{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgba(0,102,255,.1);
+    border-radius: 3px;
+    height: 32px;
+    background: rgba(0,102,255,.1);
+    padding: 0 10px;
+    color: #835bc3;
+}
+.answer-btn-actions .aw-ajax-against.active,.answer-btn-actions .aw-ajax-agree.active{
+    background: #835bc3;
+    color: #fff;
+}
+.answerCommentList .answerCommentItem{
+    border-bottom: 1px solid #f6f6f6;
+}
+.answerCommentList .answerCommentItem:last-child{border-bottom: 0}
+.pageElement{text-align: center;}
+.pageElement span{margin: 0 5px;cursor: pointer}
+.d-inline{ background:none;}
+a.d-inline{background:#e5d9f8; color: #563d7c; height:25px; line-height:25px; display:inline-block !important; padding: 0 10px; border-radius: 3px; margin-right:5px;}
+.aw-content-info h2.title{margin-bottom:20px !important;}
+.page-detail-topic{ border-bottom: 1px solid #f4f4f4; padding-bottom:20px;}
+.actions{padding-top: 15px;}
+.aw-answer-content{ padding-left:45px;}
+.answer-btn-actions{ padding-left: 45px;}
+.block-rounded{ background: #ffffff;}
+.user-btn-group{ border-top: 1px solid #dee2e6; padding-top: 10px; padding-bottom: 10px;}
+.d-flex a{ border-right: 1px solid #f4f4f4; display: inline-block; height:40px;}
+.aboutanswer dl{ border-bottom: 1px solid #f4f4f4}
+.aboutanswer dl dd label{ font-size: 12px; color: #666666}
+.aboutanswer dl dd label{ font-size: 12px; color: #666666}
+.aw-answer-sort{ border: 1px solid #dedede; border-radius: 3px;}
+.aw-answer-sort a{ font-size: 14px;}
+.answer-btn-actions .aw-ajax-against, .answer-btn-actions .aw-ajax-agree{background: #e5d9f8;border: none;font-size: 14px;color: #563d7c;}
+.extend-info{ top:35px; right: 20px;}
+.n-down{ background: #ffffff;}

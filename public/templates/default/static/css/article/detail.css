@@ -1,0 +1,12 @@
+.actions label a{
+    color: #76839b;
+}
+.actions label a.active{
+    color: #563d7c;
+}
+.btn-primary{background: #563d7c !important; border: none}
+.btn-outline-primary{color: #563d7c; border-color: #563d7c;}
+.btn-primary{background: #563d7c !important; border: none}
+.btn-outline-primary:hover, .btn-outline-primary:active{ background:#563d7c; border:1px solid #563d7c; color: #ffffff; }
+.answer-btn-actions .aw-ajax-against, .answer-btn-actions .aw-ajax-agree{background: #e5d9f8;border: none;font-size: 14px;color: #563d7c;}
+.aw-author-info{ border-bottom: 1px solid #f4f4f4; padding-bottom: 15px;}

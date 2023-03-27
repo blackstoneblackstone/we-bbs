@@ -1,12 +1,48 @@
 {
     "require": {
-        "qcloud/cos-sdk-v5": "^1.3",
-        "aliyuncs/oss-sdk-php": "2.2.4",
-        "ezyang/htmlpurifier": "^4.13",
-        "tencentcloud/sms": "^3.0",
-        "ext-zlib": "*",
-        "ext-redis": "*",
+        "php": ">=7.4",
+        "topthink/framework": "^6.0.0",
+        "topthink/think-orm": "^2.0",
+        "topthink/think-view": "^1.0",
+        "overtrue/pinyin": "^4.0",
+        "phpoffice/phpspreadsheet": "^1.8",
         "ext-json": "*",
-        "ext-mbstring": "*"
+        "ext-iconv": "*",
+        "ext-zip": "*",
+        "ext-curl": "*",
+        "ramsey/uuid": "^4.2",
+        "phpmailer/phpmailer": "^6.5",
+        "ezyang/htmlpurifier": "^4.14",
+        "endroid/qr-code": "4.4.9",
+        "ext-gd": "*",
+        "mpdf/mpdf": "8.0.*",
+        "ext-zlib": "*",
+        "topthink/think-trace": "^1.4",
+        "overtrue/wechat": "~4.0",
+        "topthink/think-image": "^1.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app"
+        },
+        "psr-0": {
+            "": "extend/"
+        },
+        "files":["app/function.inc.php","app/function.user.php"]
+    },
+    "config": {
+        "preferred-install": "dist",
+        "allow-plugins": {
+            "easywechat-composer/easywechat-composer": true
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "@php think service:discover",
+            "@php think vendor:publish"
+        ]
     }
 }
